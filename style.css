@@ -1,10 +1,11 @@
 body {
-    background: url("images/narwhal.png") no-repeat center center fixed;
+    background: url("images/narwhal3.jpg") no-repeat center center fixed;
     background-color: #305f8d;
     background-size: cover;
     color: rgb(245, 245, 245);
     font-family: "Courier New", Courier, monospace;
     font-size: 20px;
+    text-shadow: 1px 1px #777777;
 }
 h1 {
     padding: 20px;
@@ -39,6 +40,7 @@ footer {
     width: 80%;
     height: 5px;
     background-color: white;
+    box-shadow: 1px 1px #777777;
 }
 @media only screen and (max-width: 700px) {
     h1 {
