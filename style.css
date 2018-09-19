@@ -4,6 +4,7 @@ body {
     background-size: cover;
     color: rgb(245, 245, 245);
     font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
 }
 h1 {
     padding: 20px;
@@ -15,7 +16,6 @@ h1 {
     letter-spacing: 5px;
 }
 p {
-    font-size: 20px;
     line-height: 1.2;
 }
 header {
