@@ -7,6 +7,12 @@ body {
 }
 h1 {
     padding: 20px;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
 }
 p {
     font-size: 20px;
@@ -14,12 +20,6 @@ p {
 }
 header {
     margin: 0 auto;
-    text-align: center;
-    font-size: 100px;
-    font-family: "Courier New", Courier, monospace;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 5px;
 }
 main {
     margin: 0 auto;
@@ -37,4 +37,9 @@ footer {
     width: 70%;
     height: 5px;
     background-color: white;
+}
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 60px;
+    }
 }
