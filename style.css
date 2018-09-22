@@ -30,12 +30,15 @@ main {
 }
 footer {
     position: fixed;
+    background-color: #305f8d;
+    color: white;
     width: 100%;
     bottom: 0;
     text-align: center;
-    padding-bottom: 5px;
+    padding: 8px 0 8px 0;
     font-size: 10px;
     text-shadow: none;
+    border-top: 5px solid white;
 }
 .division {
     margin: 10px auto;
