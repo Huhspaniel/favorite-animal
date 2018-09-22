@@ -1,3 +1,3 @@
-# favorite-animal
+# narwhal
 
-Favorite animal page
+Super awesome narwhal webpage
