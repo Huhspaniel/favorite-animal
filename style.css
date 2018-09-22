@@ -57,6 +57,25 @@ footer {
     height: 100%;
     background-color: white;
 }
+.sidebar img {
+    box-sizing: border-box;
+    width: 100%;
+}
+.sidebar i {
+    margin: 7px 7px 0 7px;
+}
+.material-icons {
+    text-shadow: none;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.navy001 {
+    color: #305f8d;
+}
 @media only screen and (max-width: 700px) {
     h1 {
         font-size: 75px;
