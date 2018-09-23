@@ -57,12 +57,18 @@ footer {
     height: 100%;
     background-color: white;
 }
-.sidebar img {
-    box-sizing: border-box;
-    width: 100%;
+.sidebar a {
+    width: min-content;
+}
+.sidebar a:hover i {
+    background-color: #c5c5c5;
+}
+.sidebar a:active i {
+    background-color: #7a7a7a;
 }
 .sidebar i {
-    margin: 7px 7px 0 7px;
+    box-sizing: border-box;
+    padding: 7px 7px 7px 7px;
 }
 .material-icons {
     text-shadow: none;
