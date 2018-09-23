@@ -1,1 +1,114 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    background: url("assets/images/narwhal3.jpg") no-repeat center center fixed;
+    background-color: #305f8d;
+    background-size: cover;
+    color: rgb(245, 245, 245);
+    font-family: "Courier New", Courier, monospace;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px #000000;
+    border-radius: 1px;
+    margin: 0 0 30px 50px;
+}
+h1 {
+    padding: 20px;
+    text-align: center;
+    font-size: 100px;
+    font-family: "Courier New", Courier, monospace;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+p {
+    line-height: 1.2;
+}
+header {
+    margin: 0 auto;
+}
+main {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+footer {
+    position: fixed;
+    background-color: #305f8d;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 8px 0 8px 0;
+    font-size: 10px;
+    text-shadow: none;
+    border-top: 4px solid white;
+}
+.division {
+    margin: 10px auto;
+    width: 80%;
+    height: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 2px #000000;
+    border-radius: 1px;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+	top: 0;
+    width: 50px;
+    height: 100%;
+    background-color: white;
+}
+.sidebar > nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.sidebar a {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    padding: 5px 7px 5px 7px;
+}
+.sidebar a:hover {
+    background-color: #c5c5c5;
+}
+.sidebar a:active {
+    background-color: #7a7a7a;
+}
+.material-icons {
+    text-shadow: none;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.navy001 {
+    color: #305f8d;
+}
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 75px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .sidebar {
+        width: 100%;
+        height: 40px;
+        top: 0;
+    }
+    .sidebar > nav {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .sidebar a {
+        padding: 2px 5px 2px 5px;
+    }
+    body {
+        margin: 40px 0 30px 0;
+    }
+}
