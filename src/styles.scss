@@ -1,5 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
 body {
-    background: url("images/narwhal3.jpg") no-repeat center center fixed;
+    background: url("assets/images/narwhal3.jpg") no-repeat center center fixed;
     background-color: #305f8d;
     background-size: cover;
     color: rgb(245, 245, 245);
@@ -29,19 +30,6 @@ main {
     margin: 0 auto;
     text-align: center;
 }
-footer {
-    position: fixed;
-    background-color: #305f8d;
-    color: white;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    padding: 8px 0 8px 0;
-    font-size: 10px;
-    text-shadow: none;
-    border-top: 4px solid white;
-}
 .division {
     margin: 10px auto;
     width: 80%;
@@ -53,6 +41,7 @@ footer {
 .sidebar {
     position: fixed;
     left: 0;
+	top: 0;
     width: 50px;
     height: 100%;
     background-color: white;
@@ -86,6 +75,19 @@ footer {
 }
 .material-icons.navy001 {
     color: #305f8d;
+}
+footer {
+    position: fixed;
+    background-color: #305f8d;
+    color: white;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 10px;
+    text-shadow: none;
+    border-top: 4px solid white;
 }
 @media only screen and (max-width: 700px) {
     h1 {
