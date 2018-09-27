@@ -23,6 +23,8 @@ h1 {
 }
 p {
     line-height: 1.2;
+	padding: 0;
+	margin: 0;
 }
 header {
     margin: 0 auto;
@@ -58,28 +60,30 @@ main {
 		    display: flex;
 		    justify-content: center;
 		    text-decoration: none;
-		    padding: 5px 7px 5px 7px;
-		}
-		a:hover {
-		    background-color: #c5c5c5;
-		}
-		a:active {
-		    background-color: #7a7a7a;
+		    padding: 5px 7px;
+
+			&:hover {
+				background-color: #c5c5c5;
+			}
+			&:active {
+			    background-color: #7a7a7a;
+			}
+			.material-icons {
+			    color: #305f8d;
+			}
 		}
 	}
 }
 .material-icons {
     text-shadow: none;
+	&.md-48 {
+	    font-size: 48px;
+	}
+	&.md-36 {
+	    font-size: 36px;
+	}
 }
-.material-icons.md-48 {
-    font-size: 48px;
-}
-.material-icons.md-36 {
-    font-size: 36px;
-}
-.material-icons.navy001 {
-    color: #305f8d;
-}
+
 footer {
     position: fixed;
     background-color: #305f8d;
