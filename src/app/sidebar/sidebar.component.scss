@@ -1,9 +1,58 @@
-.activated {
-	&, &:hover {
-		background-color: #305f8d;
-	}
+.sidebar {
+    position: fixed;
+    left: 0;
+	top: 0;
+    width: 50px;
+    height: 100%;
+    background-color: white;
 
-	.material-icons {
-		color: white;
+	nav {
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+
+		a {
+		    flex-grow: 1;
+		    display: flex;
+		    justify-content: center;
+		    text-decoration: none;
+		    padding: 5px 7px;
+
+			&:hover {
+				background-color: #c5c5c5;
+			}
+			&:active {
+			    background-color: #7a7a7a;
+			}
+			.material-icons {
+			    color: #305f8d;
+			}
+		}
+		.activated {
+			&, &:hover {
+				background-color: #305f8d;
+			}
+
+			.material-icons {
+				color: white;
+			}
+		}
 	}
+}
+
+@media only screen and (max-width: 700px) {
+	.sidebar {
+        width: 100%;
+        height: 40px;
+        top: 0;
+
+		nav {
+	        flex-direction: row;
+	        justify-content: space-evenly;
+
+			a {
+		        padding: 2px 5px 2px 5px;
+		    }
+	    }
+    }
 }
