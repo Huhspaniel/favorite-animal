@@ -3,7 +3,9 @@
 </header>
 <main>
 	<div class="user" *ngFor="let friend of friends">
-		<p>{{ friend.name }}</p>
-		<p>Username: {{ friend.username }}</p>
+		<a routingLink="#">
+			<p>{{ friend.name }}</p>
+			<p>@{{ friend.username }}</p>
+		</a>
 	</div>
 </main>

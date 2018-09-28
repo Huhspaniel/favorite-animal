@@ -1,0 +1,46 @@
+p {
+	text-shadow: none;
+	color: #666666;
+	padding: 5px 15px;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #ffffff;
+	width: 100%;
+	margin: 0 auto;
+	padding: 6px 0;
+
+	.user {
+		width: 90%;
+		margin: 6px;
+
+		a {
+			// border: 1px solid #305f8d;
+			background-color: #eeeeee;
+			border-radius: 10px;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: inherit;
+			cursor: pointer;
+			padding: 5px 0;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			&:hover {
+				background-color: #f1f1f1;
+			}
+			&:active {
+			    background-color: #d7d7d7;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 700px) {
+}

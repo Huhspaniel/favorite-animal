@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+html, body, app-root {
+	height: 100%;
+}
 body {
     background: url("assets/images/narwhal3.jpg") no-repeat center center fixed;
     background-color: #305f8d;
@@ -8,9 +11,30 @@ body {
     font-size: 20px;
     text-shadow: 1px 1px 2px #000000;
 	margin: 0;
-}
-.content {
-	margin: 0 0 55px 50px;
+
+	app-root {
+		display: flex;
+		flex-direction: column;
+
+		.content {
+			margin-left: 52px;
+
+			flex: 1 0 auto;
+		}
+		app-footer {
+		    background-color: #305f8d;
+		    color: white;
+		    width: 100%;
+		    text-align: center;
+		    padding: 30px 0;
+		    font-size: 10px;
+		    text-shadow: none;
+		    border-top: 2px solid #97a5ba;
+			z-index: 1;
+
+			flex-shrink: 0;
+		}
+	}
 }
 h1, h2 {
 	margin: 0;
@@ -45,9 +69,13 @@ p {
 }
 
 @media only screen and (max-width: 700px) {
-	.content {
-        margin: 40px 0 55px;
-    }
+	body {
+		app-root{
+			.content {
+		        margin: 42px 0 0;
+		    }
+		}
+	}
     h1 {
         font-size: 75px;
 		padding: 30px;
@@ -59,4 +87,13 @@ p {
     p {
         font-size: 17px;
     }
+}
+
+@media only screen and (max-width: 450px) {
+	h1 {
+		font-size: 55px;
+	}
+	h2 {
+		font-size: 35px
+	}
 }
