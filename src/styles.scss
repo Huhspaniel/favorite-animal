@@ -12,14 +12,22 @@ body {
 .content {
 	margin: 0 0 55px 50px;
 }
+h1, h2 {
+	margin: 0;
+	font-weight: 600;
+}
 h1 {
     padding: 40px;
-	margin: 0;
-    text-align: center;
-    font-size: 100px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 5px;
+	text-align: center;
+	font-size: 100px;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+h2 {
+	padding: 20px 35px;
+	font-size: 60px;
+	background-color: #305f8d;
+	text-shadow: none;
 }
 p {
     line-height: 1.2;
@@ -44,6 +52,10 @@ p {
         font-size: 75px;
 		padding: 30px;
     }
+	h2 {
+		padding: 20px;
+		font-size: 45px;
+	}
     p {
         font-size: 17px;
     }
