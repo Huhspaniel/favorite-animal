@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-html, body, app-root {
+html, body, app-root, {
 	height: 100%;
 }
 body {
@@ -20,6 +20,7 @@ body {
 			margin-left: 52px;
 
 			flex: 1 0 auto;
+
 		}
 		app-footer {
 		    background-color: #305f8d;
@@ -33,6 +34,46 @@ body {
 			z-index: 1;
 
 			flex-shrink: 0;
+		}
+	}
+}
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: calc(100vh - 108px - 73px);
+	margin: 0 auto;
+	padding: 6px 0;
+	background-color: #ffffff;
+
+	.li {
+		width: calc(100% - 24px);
+		margin: 6px;
+
+		a {
+			background-color: #eeeeee;
+			border-radius: 2px;
+			box-sizing: border-box;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+			color: inherit;
+			cursor: pointer;
+			padding: 5px 0;
+
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+
+			&:hover {
+				background-color: #f1f1f1;
+			}
+			&:active {
+				background-color: #d7d7d7;
+			}
 		}
 	}
 }
@@ -87,6 +128,9 @@ p {
     p {
         font-size: 17px;
     }
+	main {
+		min-height: calc(100vh - 42px - 91px - 73px);
+	}
 }
 
 @media only screen and (max-width: 450px) {
@@ -95,5 +139,8 @@ p {
 	}
 	h2 {
 		font-size: 35px
+	}
+	main {
+		min-height: calc(100vh - 42px - 80px - 73px);
 	}
 }

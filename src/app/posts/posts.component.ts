@@ -1,15 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-posts',
-  templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.scss']
+	selector: 'app-posts',
+	templateUrl: './posts.component.html',
+	styleUrls: ['./posts.component.scss']
 })
 export class PostsComponent implements OnInit {
 
-  constructor() { }
+	posts: object[] = [];
 
-  ngOnInit() {
-  }
+	constructor() {
+		for (let i = 0; i < 20; i++) {
+			this.posts.push(
+				{
+					title: `post${i}`,
+					user: `user${i}`,
+				}
+			);
+		}
+	}
+
+	ngOnInit() {
+	}
 
 }
